@@ -73,10 +73,19 @@ let candidatoRecusado = !podeAplicar1;
 console.log('Candidato recusado',candidatoRecusado);
 
 //Operadores comparação com valores não booleanos
-//falsy = undefined, null, 0, false, '', NaN - Not a number
+//falsy = undefined, null, 0(Zero), false, ''(String Vazios), NaN (Not a Number)- Not a number
+let corPersinalizada0 = ''; //String vazio = falsy
+let corPadrao0 = 'azul';
+let corPerfil0 = corPersinalizada0 || corPadrao0;
 
+console.log(corPerfil0);
 
 //truthy = tudo que não seja falsy
 
+let corPersinalizada = 'vermelho';
+let corPadrao = 'azul';
+let corPerfil = corPersinalizada || corPadrao;
+
+console.log(corPerfil);
 
 //Operadores Bitwise
